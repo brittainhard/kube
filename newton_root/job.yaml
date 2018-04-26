@@ -5,8 +5,8 @@ metadata:
 spec:
   template:
     spec:
-      containers:
-      - name: pi
-        image: brittainhard/newton:0.0.1
       restartPolicy: Never
-  backoffLimit: 4
+      containers:
+      - name: root
+        image: brittainhard/newton:0.0.1
+        args: ["18"]
